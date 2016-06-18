@@ -77,7 +77,7 @@
         </dependency>
         <dependency>
             <groupId>com.buschmais.jqassistant.plugin</groupId>
-            <artifactId>jqa-ejb3-plugin</artifactId>
+            <artifactId>ejb3</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
