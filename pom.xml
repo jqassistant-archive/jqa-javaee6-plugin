@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>com.buschmais.jqassistant.plugin</groupId>
-    <artifactId>jqa-javaee6-plugin</artifactId>
+    <artifactId>javaee6</artifactId>
 
     <dependencyManagement>
     </dependencyManagement>
