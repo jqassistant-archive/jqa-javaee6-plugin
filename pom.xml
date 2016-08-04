@@ -117,6 +117,7 @@
             <artifactId>common</artifactId>
             <type>test-jar</type>
             <version>${project.version}</version>
+			<scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.buschmais.jqassistant.core</groupId>
@@ -128,6 +129,7 @@
             <artifactId>java</artifactId>
             <type>test-jar</type>
             <version>${project.version}</version>
+			<scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
