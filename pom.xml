@@ -12,6 +12,15 @@
     <artifactId>javaee6</artifactId>
     <version>1.2-SNAPSHOT</version>
 
+    <name>jQAssistant Java EE 6 Plugin</name>
+    <url>http://jqassistant.org/</url>
+
+    <description>
+        Plugin for jQAssistant to be able to scan and to
+        analyze Java EE 6 related artifacts.
+    </description>
+
+
     <organization>
         <name>buschmais GbR</name>
         <url>http://www.buschmais.com</url>
