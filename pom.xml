@@ -10,6 +10,7 @@
 
     <groupId>com.buschmais.jqassistant.plugin</groupId>
     <artifactId>javaee6</artifactId>
+    <version>1.2-SNAPSHOT</version>
 
     <organization>
         <name>buschmais GbR</name>
