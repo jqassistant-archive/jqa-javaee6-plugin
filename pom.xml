@@ -39,7 +39,7 @@
         <jqa-jaxrs-plugin.version>1.2-SNAPSHOT</jqa-jaxrs-plugin.version>
         <jqa-jpa2-plugin.version>1.2-SNAPSHOT</jqa-jpa2-plugin.version>
         <jqa-plugin-common.version>1.2-RC1</jqa-plugin-common.version>
-        <jqa-xml-plugin.version>1.2-SNAPSHOT</jqa-xml-plugin.version>
+        <jqa-xml-plugin.version>1.2-RC1</jqa-xml-plugin.version>
     </properties>
 
     <dependencyManagement>
