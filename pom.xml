@@ -33,6 +33,12 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git@github.com:buschmais/jqa-javaee6-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:buschmais/jqa-javaee6-plugin.git</developerConnection>
+        <url>https://github.com/buschmais/jqa-javaee6-plugin</url>
+    </scm>
+
     <properties>
         <jqa-ejb-plugin.version>1.2-RC1</jqa-ejb-plugin.version>
         <jqa-java-plugin.version>1.2-RC1</jqa-java-plugin.version>
