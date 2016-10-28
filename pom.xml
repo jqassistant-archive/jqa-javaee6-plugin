@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.buschmais.jqassistant</groupId>
+        <groupIdSNA>com.buschmais.jqassistant</groupIdSNA>
         <artifactId>jqassistant.plugin.plugin-parent</artifactId>
-        <version>1.2.0-RC1</version>
+        <version>1.2.0-RC2-SNAPSHOT</version>
     </parent>
 
     <groupId>com.buschmais.jqassistant.plugin</groupId>
