@@ -42,7 +42,7 @@
 
     <properties>
         <jqa-ejb-plugin.version>1.2-RC1</jqa-ejb-plugin.version>
-        <jqa-java-plugin.version>1.2-RC1</jqa-java-plugin.version>
+        <jqa-java-plugin.version>1.2-RC2-SNAPSHOT</jqa-java-plugin.version>
         <jqa-jaxrs-plugin.version>1.2-RC1</jqa-jaxrs-plugin.version>
         <jqa-jpa2-plugin.version>1.2-RC1</jqa-jpa2-plugin.version>
         <jqa-plugin-common.version>1.2-RC1</jqa-plugin-common.version>
