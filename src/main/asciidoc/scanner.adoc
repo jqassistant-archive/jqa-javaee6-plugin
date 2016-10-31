@@ -1,9 +1,9 @@
 
-include::{docRoot}/jqassistant.plugin.javaee6/scanner-ear.adoc[]
+include::{docRoot}/.javaee6/asciidoc/scanner-ear.adoc[]
 
-include::{docRoot}/jqassistant.plugin.javaee6/scanner-war.adoc[]
+include::{docRoot}/javaee6/asciidoc/scanner-war.adoc[]
 
-include::{docRoot}/jqassistant.plugin.javaee6/scanner-jsf.adoc[]
+include::{docRoot}/javaee6/asciidoc/scanner-jsf.adoc[]
 
-include::{docRoot}/jqassistant.plugin.javaee6/scanner-common.adoc[]
+include::{docRoot}/javaee6/asciidoc/scanner-common.adoc[]
 
