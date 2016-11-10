@@ -1,0 +1,6 @@
+
+= jQAssistant Java EE 6 Plugin Release Notes
+
+include::1.2.adoc[]
+
+
