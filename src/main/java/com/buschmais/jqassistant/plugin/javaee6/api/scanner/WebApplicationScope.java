@@ -8,15 +8,7 @@ import com.buschmais.jqassistant.core.scanner.api.Scope;
  */
 public enum WebApplicationScope implements Scope {
 
-    WAR {
-        @Override
-        public void onEnter(ScannerContext context) {
-        }
-
-        @Override
-        public void onLeave(ScannerContext context) {
-        }
-    };
+    WAR;
 
     @Override
     public String getPrefix() {
