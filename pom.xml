@@ -10,7 +10,7 @@
 
     <groupId>com.buschmais.jqassistant.plugin</groupId>
     <artifactId>javaee6</artifactId>
-    <version>1.2-RC2-SNAPSHOT</version>
+    <version>1.2</version>
 
     <name>jQAssistant Java EE 6 Plugin</name>
     <url>http://jqassistant.org/</url>
@@ -37,7 +37,7 @@
         <connection>scm:git:git@github.com:buschmais/jqa-javaee6-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:buschmais/jqa-javaee6-plugin.git</developerConnection>
         <url>https://github.com/buschmais/jqa-javaee6-plugin</url>
-      <tag>HEAD</tag>
+      <tag>1.2</tag>
   </scm>
 
     <properties>
