@@ -43,7 +43,7 @@
     <properties>
         <jqa-ejb-plugin.version>1.2</jqa-ejb-plugin.version>
         <jqa-java-plugin.version>1.2</jqa-java-plugin.version>
-        <jqa-jaxrs-plugin.version>1.2-RC2-SNAPSHOT</jqa-jaxrs-plugin.version>
+        <jqa-jaxrs-plugin.version>1.2</jqa-jaxrs-plugin.version>
         <jqa-jpa2-plugin.version>1.2</jqa-jpa2-plugin.version>
         <jqa-plugin-common.version>1.2</jqa-plugin-common.version>
         <jqa-xml-plugin.version>1.2</jqa-xml-plugin.version>
