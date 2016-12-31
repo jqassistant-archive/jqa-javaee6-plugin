@@ -41,7 +41,7 @@
   </scm>
 
     <properties>
-        <jqa-ejb-plugin.version>1.2-RC2-SNAPSHOT</jqa-ejb-plugin.version>
+        <jqa-ejb-plugin.version>1.2</jqa-ejb-plugin.version>
         <jqa-java-plugin.version>1.2-RC2-SNAPSHOT</jqa-java-plugin.version>
         <jqa-jaxrs-plugin.version>1.2-RC2-SNAPSHOT</jqa-jaxrs-plugin.version>
         <jqa-jpa2-plugin.version>1.2-RC2-SNAPSHOT</jqa-jpa2-plugin.version>
