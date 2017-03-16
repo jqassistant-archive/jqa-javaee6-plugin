@@ -16,6 +16,14 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
 import com.buschmais.jqassistant.core.scanner.api.Scanner;
 import com.buschmais.jqassistant.core.scanner.api.ScannerContext;
 import com.buschmais.jqassistant.core.scanner.api.ScannerPlugin.Requires;
@@ -26,14 +34,6 @@ import com.buschmais.jqassistant.plugin.common.api.scanner.AbstractScannerPlugin
 import com.buschmais.jqassistant.plugin.common.api.scanner.FileResolver;
 import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.JsfFaceletDescriptor;
-
-import org.apache.commons.lang.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 /**
  * Scans JSF template files and sets relationships between them.
@@ -127,7 +127,7 @@ public class JsfFaceletScannerPlugin extends AbstractScannerPlugin<FileResource,
     public JsfFaceletDescriptor scan(FileResource item, String path, Scope scope, Scanner scanner) throws IOException {
         ScannerContext context = scanner.getContext();
         Store store = context.getStore();
-        FileDescriptor fileDescriptor = context.peek(FileDescriptor.class);
+        FileDescriptor fileDescriptor = context.getCurrentDescriptor();
         JsfFaceletDescriptor currentDescriptor = store.addDescriptorType(fileDescriptor, JsfFaceletDescriptor.class);
 
         try {

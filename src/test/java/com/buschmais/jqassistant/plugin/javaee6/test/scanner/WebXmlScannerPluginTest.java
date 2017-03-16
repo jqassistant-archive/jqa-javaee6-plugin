@@ -193,7 +193,7 @@ public class WebXmlScannerPluginTest extends AbstractXmlScannerTest {
             }
         });
 
-        when(scannerContext.peek(FileDescriptor.class)).thenReturn(fileDescriptor);
+        when(scannerContext.getCurrentDescriptor()).thenReturn(fileDescriptor);
         when(store.addDescriptorType(fileDescriptor, WebXmlDescriptor.class)).thenReturn(webXmlDescriptor);
         when(scanner.scan(Mockito.any(StreamSource.class), Mockito.eq("/WEB-INF/web.xml"), Mockito.eq(WebApplicationScope.WAR))).thenReturn(webXmlDescriptor);
         when(webXmlDescriptor.isXmlWellFormed()).thenReturn(true);
