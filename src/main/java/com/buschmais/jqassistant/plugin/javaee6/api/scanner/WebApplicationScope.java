@@ -1,6 +1,5 @@
 package com.buschmais.jqassistant.plugin.javaee6.api.scanner;
 
-import com.buschmais.jqassistant.core.scanner.api.ScannerContext;
 import com.buschmais.jqassistant.core.scanner.api.Scope;
 
 /**

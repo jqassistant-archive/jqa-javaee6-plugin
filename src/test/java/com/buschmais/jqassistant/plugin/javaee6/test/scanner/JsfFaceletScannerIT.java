@@ -1,12 +1,5 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.Matchers.not;
-import static org.hamcrest.Matchers.nullValue;
-import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,12 +7,18 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import com.buschmais.jqassistant.plugin.java.test.AbstractJavaPluginIT;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.JsfFaceletDescriptor;
 import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.Matchers.not;
+import static org.hamcrest.Matchers.nullValue;
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
+import static org.junit.Assert.assertThat;
 
 /**
  * Scans some jspx-files and checks nodes & relationships.

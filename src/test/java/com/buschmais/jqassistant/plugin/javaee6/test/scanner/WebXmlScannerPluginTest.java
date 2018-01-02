@@ -1,13 +1,45 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
-import static org.mockito.Mockito.*;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
 
 import javax.xml.transform.stream.StreamSource;
+
+import com.buschmais.jqassistant.plugin.common.api.model.FileDescriptor;
+import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
+import com.buschmais.jqassistant.plugin.java.api.model.ClassFileDescriptor;
+import com.buschmais.jqassistant.plugin.java.api.model.JavaClassesDirectoryDescriptor;
+import com.buschmais.jqassistant.plugin.java.api.model.TypeDescriptor;
+import com.buschmais.jqassistant.plugin.java.api.scanner.TypeCache;
+import com.buschmais.jqassistant.plugin.java.api.scanner.TypeResolver;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.AuthConstraintDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.DescriptionDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.DisplayNameDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ErrorPageDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.FilterDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.FilterMappingDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.FormLoginConfigDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.HttpMethodDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.IconDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ListenerDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.LoginConfigDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ParamValueDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.RoleNameDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.RunAsDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.SecurityConstraintDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.SecurityRoleDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ServletDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ServletMappingDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.SessionConfigDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.UrlPatternDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.UserDataConstraintDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.WebApplicationArchiveDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.WebResourceCollectionDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.WebXmlDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
+import com.buschmais.jqassistant.plugin.javaee6.impl.scanner.WebXmlScannerPlugin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,16 +49,10 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
 
-import com.buschmais.jqassistant.plugin.common.api.model.FileDescriptor;
-import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
-import com.buschmais.jqassistant.plugin.java.api.model.ClassFileDescriptor;
-import com.buschmais.jqassistant.plugin.java.api.model.JavaClassesDirectoryDescriptor;
-import com.buschmais.jqassistant.plugin.java.api.model.TypeDescriptor;
-import com.buschmais.jqassistant.plugin.java.api.scanner.TypeCache;
-import com.buschmais.jqassistant.plugin.java.api.scanner.TypeResolver;
-import com.buschmais.jqassistant.plugin.javaee6.api.model.*;
-import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
-import com.buschmais.jqassistant.plugin.javaee6.impl.scanner.WebXmlScannerPlugin;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class WebXmlScannerPluginTest extends AbstractXmlScannerTest {

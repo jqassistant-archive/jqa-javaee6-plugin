@@ -1,17 +1,21 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 import java.util.List;
-
-import org.junit.Before;
-import org.mockito.Mock;
 
 import com.buschmais.jqassistant.core.scanner.api.Scanner;
 import com.buschmais.jqassistant.core.scanner.api.ScannerContext;
 import com.buschmais.jqassistant.core.store.api.Store;
-import com.buschmais.jqassistant.plugin.javaee6.api.model.*;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.DescriptionDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.DisplayNameDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.IconDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.RoleNameDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.SecurityRoleDescriptor;
+
+import org.junit.Before;
+import org.mockito.Mock;
+
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public abstract class AbstractXmlScannerTest {
 

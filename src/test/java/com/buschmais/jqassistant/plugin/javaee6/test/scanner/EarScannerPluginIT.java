@@ -1,20 +1,20 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
+import java.io.File;
+import java.util.List;
+
+import com.buschmais.jqassistant.plugin.common.test.AbstractPluginIT;
+import com.buschmais.jqassistant.plugin.java.api.model.PackageDescriptor;
+import com.buschmais.jqassistant.plugin.java.api.model.TypeDescriptor;
+
+import org.junit.Test;
+
 import static com.buschmais.jqassistant.plugin.java.test.matcher.PackageDescriptorMatcher.packageDescriptor;
 import static com.buschmais.jqassistant.plugin.java.test.matcher.TypeDescriptorMatcher.typeDescriptor;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.hamcrest.core.IsCollectionContaining.hasItems;
 import static org.junit.Assert.assertThat;
-
-import java.io.File;
-import java.util.List;
-
-import org.junit.Test;
-
-import com.buschmais.jqassistant.plugin.common.test.AbstractPluginIT;
-import com.buschmais.jqassistant.plugin.java.api.model.PackageDescriptor;
-import com.buschmais.jqassistant.plugin.java.api.model.TypeDescriptor;
 
 /**
  * Verify scanning of EAR archives.

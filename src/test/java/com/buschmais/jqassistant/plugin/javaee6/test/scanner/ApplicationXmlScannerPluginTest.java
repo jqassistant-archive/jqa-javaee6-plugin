@@ -1,13 +1,26 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
-import static org.mockito.Mockito.*;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
 
 import javax.xml.transform.stream.StreamSource;
+
+import com.buschmais.jqassistant.plugin.common.api.model.FileDescriptor;
+import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ApplicationXmlDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ClientModuleDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.ConnectorModuleDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.DescriptionDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.DisplayNameDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.EjbModuleDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.IconDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.RoleNameDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.SecurityRoleDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.model.WebModuleDescriptor;
+import com.buschmais.jqassistant.plugin.javaee6.api.scanner.EnterpriseApplicationScope;
+import com.buschmais.jqassistant.plugin.javaee6.impl.scanner.ApplicationXmlScannerPlugin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,11 +30,9 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
 
-import com.buschmais.jqassistant.plugin.common.api.model.FileDescriptor;
-import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
-import com.buschmais.jqassistant.plugin.javaee6.api.model.*;
-import com.buschmais.jqassistant.plugin.javaee6.api.scanner.EnterpriseApplicationScope;
-import com.buschmais.jqassistant.plugin.javaee6.impl.scanner.ApplicationXmlScannerPlugin;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ApplicationXmlScannerPluginTest extends AbstractXmlScannerTest {

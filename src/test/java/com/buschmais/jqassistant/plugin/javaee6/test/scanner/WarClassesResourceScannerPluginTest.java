@@ -1,18 +1,6 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 import java.io.IOException;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
 
 import com.buschmais.jqassistant.core.scanner.api.DefaultScope;
 import com.buschmais.jqassistant.core.scanner.api.Scanner;
@@ -25,6 +13,18 @@ import com.buschmais.jqassistant.plugin.java.api.model.ClassFileDescriptor;
 import com.buschmais.jqassistant.plugin.java.api.scanner.JavaScope;
 import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
 import com.buschmais.jqassistant.plugin.javaee6.impl.scanner.WarClassesFileScannerPlugin;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class WarClassesResourceScannerPluginTest {

@@ -1,11 +1,6 @@
 package com.buschmais.jqassistant.plugin.javaee6.test.scanner;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
-
 import java.io.File;
-
-import org.junit.Test;
 
 import com.buschmais.jqassistant.core.scanner.api.Scanner;
 import com.buschmais.jqassistant.plugin.common.test.AbstractPluginIT;
@@ -13,10 +8,14 @@ import com.buschmais.jqassistant.plugin.java.api.scanner.ArtifactScopedTypeResol
 import com.buschmais.jqassistant.plugin.java.api.scanner.TypeResolver;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.ApplicationXmlDescriptor;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.WebApplicationArchiveDescriptor;
-import com.buschmais.jqassistant.plugin.javaee6.api.model.WebApplicationDescriptor;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.WebXmlDescriptor;
 import com.buschmais.jqassistant.plugin.javaee6.api.scanner.EnterpriseApplicationScope;
 import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
+
+import org.junit.Test;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
 
 /**
  * Contains integration tests for JavaEE XML descriptors.
