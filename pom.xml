@@ -41,7 +41,7 @@
   </scm>
 
     <properties>
-        <jqa-ejb-plugin.version>1.5-SNAPSHOT</jqa-ejb-plugin.version>
+        <jqa-ejb3-plugin.version>1.5-SNAPSHOT</jqa-ejb3-plugin.version>
         <jqa-java-plugin.version>1.5-SNAPSHOT</jqa-java-plugin.version>
         <jqa-jaxrs-plugin.version>1.5-SNAPSHOT</jqa-jaxrs-plugin.version>
         <jqa-jpa2-plugin.version>1.5-SNAPSHOT</jqa-jpa2-plugin.version>
@@ -94,7 +94,7 @@
         <dependency>
             <groupId>com.buschmais.jqassistant.plugin</groupId>
             <artifactId>ejb3</artifactId>
-            <version>${jqa-ejb-plugin.version}</version>
+            <version>${jqa-ejb3-plugin.version}</version>
         </dependency>
         <dependency>
             <groupId>com.buschmais.jqassistant.plugin</groupId>
