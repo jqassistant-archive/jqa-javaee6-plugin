@@ -2,17 +2,17 @@
 == Scanner for EAR files
 Imports EAR (Enterprise ARchive) files.
 
-=== Nodes labled with `:File:Enterprise:Application:Archive:Container`
+=== Nodes labled with `:File:Enterprise:Application:Archive`
 A file representing an EAR file.
 
-.Properties of `:File:Enterprise:Application:Archive:Container`
+.Properties of `:File:Enterprise:Application:Archive`
 [options="header"]
 |====
 | Name     | Description
 | fileName | The file name
 |====
 
-.Relations of `:File:Enterprise:Application:Archive:Container`
+.Relations of `:File:Enterprise:Application:Archive`
 [options="header"]
 |====
 | Name     | Target label(s) | Cardinality | Description

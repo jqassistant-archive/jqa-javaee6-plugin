@@ -35,12 +35,12 @@ public class EarScannerPluginIT extends AbstractPluginIT {
         File earFile = new File("target/test-data/javaee-inject-example-ear.ear");
         store.beginTransaction();
         getScanner().scan(earFile, earFile.getAbsolutePath(), null);
-        List<Object> earDescriptors = query("match (ear:Enterprise:Application:Zip:Archive:Container) return ear").getColumn("ear");
+        List<Object> earDescriptors = query("match (ear:Enterprise:Application:Zip:Archive) return ear").getColumn("ear");
         assertThat(earDescriptors, hasSize(1));
         List<Object> applicationXml = query("match (:Enterprise:Application)-[:CONTAINS]->(application:Application:Xml) return application")
                 .getColumn("application");
         assertThat(applicationXml, hasSize(1));
-        List<Object> warDescriptors = query("match (:Enterprise:Application)-[:CONTAINS]->(war:Web:Application:Zip:Archive:Container) return war")
+        List<Object> warDescriptors = query("match (:Enterprise:Application)-[:CONTAINS]->(war:Web:Application:Zip:Archive) return war")
                 .getColumn("war");
         assertThat(warDescriptors, hasSize(1));
         verifyWarArchive();
