@@ -4,12 +4,12 @@
     <parent>
         <groupId>com.buschmais.jqassistant</groupId>
         <artifactId>jqassistant.plugin.plugin-parent</artifactId>
-        <version>1.5.0-RC-2-SNAPSHOT</version>
+        <version>1.5.0</version>
     </parent>
 
     <groupId>com.buschmais.jqassistant.plugin</groupId>
     <artifactId>javaee6</artifactId>
-    <version>1.5-RC-2-SNAPSHOT</version>
+    <version>1.5.0</version>
 
     <name>jQAssistant Java EE 6 Plugin</name>
     <url>http://jqassistant.org/</url>
@@ -40,12 +40,12 @@
   </scm>
 
     <properties>
-        <jqa-ejb3-plugin.version>1.5-RC-2-SNAPSHOT</jqa-ejb3-plugin.version>
-        <jqa-java-plugin.version>1.5-RC-2-SNAPSHOT</jqa-java-plugin.version>
-        <jqa-jaxrs-plugin.version>1.5-RC-2-SNAPSHOT</jqa-jaxrs-plugin.version>
-        <jqa-jpa2-plugin.version>1.5-RC-2-SNAPSHOT</jqa-jpa2-plugin.version>
-        <jqa-plugin-common.version>1.5-RC-2-SNAPSHOT</jqa-plugin-common.version>
-        <jqa-xml-plugin.version>1.5-RC-2-SNAPSHOT</jqa-xml-plugin.version>
+        <jqa-ejb3-plugin.version>1.5.0</jqa-ejb3-plugin.version>
+        <jqa-java-plugin.version>1.5.0</jqa-java-plugin.version>
+        <jqa-jaxrs-plugin.version>1.5.0</jqa-jaxrs-plugin.version>
+        <jqa-jpa2-plugin.version>1.5.0</jqa-jpa2-plugin.version>
+        <jqa-plugin-common.version>1.5.0</jqa-plugin-common.version>
+        <jqa-xml-plugin.version>1.5.0</jqa-xml-plugin.version>
     </properties>
 
     <dependencyManagement>
