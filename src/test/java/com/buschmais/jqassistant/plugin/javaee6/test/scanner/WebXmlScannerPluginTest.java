@@ -10,7 +10,6 @@ import javax.xml.transform.stream.StreamSource;
 import com.buschmais.jqassistant.plugin.common.api.model.FileDescriptor;
 import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
 import com.buschmais.jqassistant.plugin.java.api.model.ClassFileDescriptor;
-import com.buschmais.jqassistant.plugin.java.api.model.JavaClassesDirectoryDescriptor;
 import com.buschmais.jqassistant.plugin.java.api.model.TypeDescriptor;
 import com.buschmais.jqassistant.plugin.java.api.scanner.TypeCache;
 import com.buschmais.jqassistant.plugin.java.api.scanner.TypeResolver;
@@ -207,9 +206,7 @@ public class WebXmlScannerPluginTest extends AbstractXmlScannerTest {
 
     @Test
     public void webXml() throws IOException {
-        when(scannerContext.peek(WebApplicationArchiveDescriptor.class)).thenReturn(warDescriptor);
         when(scannerContext.peek(TypeResolver.class)).thenReturn(typeResolver);
-        when(scannerContext.getStore().create(JavaClassesDirectoryDescriptor.class)).thenReturn(mock(JavaClassesDirectoryDescriptor.class));
 
         FileResource fileResource = mock(FileResource.class);
         when(fileResource.createStream()).thenAnswer(new Answer<InputStream>() {
@@ -237,7 +234,6 @@ public class WebXmlScannerPluginTest extends AbstractXmlScannerTest {
 
         // Servlet
         when(store.create(ServletDescriptor.class)).thenReturn(servletDescriptor);
-        when(servletDescriptor.getName()).thenReturn("TestServlet");
         when(servletDescriptor.getDescriptions()).thenReturn(mock(List.class));
         when(servletDescriptor.getDisplayNames()).thenReturn(mock(List.class));
         when(servletDescriptor.getIcons()).thenReturn(mock(List.class));

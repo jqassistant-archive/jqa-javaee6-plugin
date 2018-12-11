@@ -7,9 +7,7 @@ import com.buschmais.jqassistant.core.scanner.api.Scanner;
 import com.buschmais.jqassistant.core.scanner.api.ScannerContext;
 import com.buschmais.jqassistant.plugin.common.api.model.FileDescriptor;
 import com.buschmais.jqassistant.plugin.common.api.scanner.ContainerFileResolver;
-import com.buschmais.jqassistant.plugin.common.api.scanner.FileResolver;
 import com.buschmais.jqassistant.plugin.common.api.scanner.filesystem.FileResource;
-import com.buschmais.jqassistant.plugin.java.api.model.ClassFileDescriptor;
 import com.buschmais.jqassistant.plugin.java.api.scanner.JavaScope;
 import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
 import com.buschmais.jqassistant.plugin.javaee6.impl.scanner.WarClassesFileScannerPlugin;
@@ -39,9 +37,6 @@ public class WarClassesResourceScannerPluginTest {
     private FileDescriptor containedFileDescriptor;
 
     @Mock
-    private ClassFileDescriptor requiredFileDescriptor;
-
-    @Mock
     private Scanner scanner;
 
     @Mock
@@ -53,7 +48,6 @@ public class WarClassesResourceScannerPluginTest {
     @Before
     public void stub() {
         when(scanner.getContext()).thenReturn(scannerContext);
-        when(scannerContext.peek(FileResolver.class)).thenReturn(containerFileResolver);
     }
 
     @Test
