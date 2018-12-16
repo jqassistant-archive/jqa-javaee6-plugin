@@ -11,7 +11,7 @@ import com.buschmais.jqassistant.plugin.javaee6.api.model.IconDescriptor;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.RoleNameDescriptor;
 import com.buschmais.jqassistant.plugin.javaee6.api.model.SecurityRoleDescriptor;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.mockito.Mock;
 
 import static org.mockito.Mockito.verify;
@@ -28,7 +28,7 @@ public abstract class AbstractXmlScannerTest {
     @Mock
     protected Store store;
 
-    @Before
+    @BeforeEach
     public void before() {
         when(scanner.getContext()).thenReturn(scannerContext);
         when(scannerContext.getStore()).thenReturn(store);
