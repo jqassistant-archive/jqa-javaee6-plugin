@@ -2,7 +2,7 @@
 == Scanner for EAR files
 Imports EAR (Enterprise ARchive) files.
 
-=== Nodes labled with `:File:Enterprise:Application:Archive`
+=== Nodes labeled with `:File:Enterprise:Application:Archive`
 A file representing an EAR file.
 
 .Properties of `:File:Enterprise:Application:Archive`
@@ -20,7 +20,7 @@ A file representing an EAR file.
 |====
 
 [[ApplicationXmlScanner]]
-=== Nodes labled with `:File:Enterprise:Application:Xml`
+=== Nodes labeled with `:File:Enterprise:Application:Xml`
 Represents a Java EE application.xml descriptor.
 
 .Properties of `:File:Enterprise:Application:Xml`
@@ -44,7 +44,7 @@ Represents a Java EE application.xml descriptor.
 |====
 
 [[:Enterprise:Application:Module]]
-=== Nodes labled with `:Enterprise:Application:Module`
+=== Nodes labeled with `:Enterprise:Application:Module`
 Represents a declared module of a Java EE Java application. Can be qualified by either
 `:Ejb`, `:Web`, `:Connector` or `:JavaClient`.
 
@@ -56,7 +56,7 @@ Represents a declared module of a Java EE Java application. Can be qualified by 
 |====
 
 [[:Enterprise:Application:Module:Web]]
-=== Nodes labled with `:Enterprise:Application:Module:Web`
+=== Nodes labeled with `:Enterprise:Application:Module:Web`
 Represents a declared web module of a Java EE Java application.
 
 .Properties of `:Enterprise:Application:Module:Web`

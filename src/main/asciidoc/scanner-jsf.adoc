@@ -11,7 +11,7 @@ Imports JSF template files (e.g. `*.jspx`) and builds references between them (t
 | facelet.file.pattern 	| Regular expression that describes scanable JSF template files.	| `.*\\.jspx`
 |====
 
-=== Nodes labled with `:File:Jsf:Facelet`
+=== Nodes labeled with `:File:Jsf:Facelet`
 A JSF template file.
 
 .Properties of `:File:Jsf:Facelet`

@@ -2,7 +2,7 @@
 == Scanner for WAR files
 Imports WAR (Web Application Archive) files.
 
-=== Nodes labled with `:File:Web:Application:Archive`
+=== Nodes labeled with `:File:Web:Application:Archive`
 A file representing WAR file.
 
 .Properties of `:File:Web:Application:Archive`
@@ -20,7 +20,7 @@ A file representing WAR file.
 |====
 
 [[WebXmlScanner]]
-=== Nodes labled with `:File:Web:Xml`
+=== Nodes labeled with `:File:Web:Xml`
 Represents a web application descriptor.
 
 .Relations of `:File:Web:Xml`
@@ -42,7 +42,7 @@ Represents a web application descriptor.
 
 
 [[:SessionConfig]]
-=== Nodes labled with `:SessionConfig`
+=== Nodes labeled with `:SessionConfig`
 Represents a session configuration.
 
 .Properties of `:SessionConfig`
@@ -54,7 +54,7 @@ Represents a session configuration.
 
 
 [[:Servlet]]
-=== Nodes labled with `:Servlet`
+=== Nodes labeled with `:Servlet`
 Represents a servlet declaration.
 
 .Properties of `:Servlet`
