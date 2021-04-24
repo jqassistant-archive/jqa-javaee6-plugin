@@ -1,5 +1,7 @@
-<jqa-plugin:jqassistant-plugin xmlns:jqa-plugin="http://www.buschmais.com/jqassistant/core/plugin/schema/v1.4"
-                               name="Java EE 6">
+<jpd:jqassistant-plugin xmlns:jpd="http://schema.jqassistant.org/plugin/v1.10"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:schemaLocation="http://schema.jqassistant.org/plugin/v1.10 https://schema.jqassistant.org/plugin/jqassistant-plugin-v1.10.xsd"
+                        name="Java EE 6" id="jqa.plugin.javaee">
     <description>Aggregates plugins providing scanners and rules for Java EE 6 technologies (e.g. JPA2, EJB3).</description>
     <model>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.EnterpriseApplicationArchiveDescriptor</class>
@@ -59,4 +61,4 @@
         <class>com.buschmais.jqassistant.plugin.javaee6.impl.scanner.ApplicationXmlScannerPlugin</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.impl.scanner.JsfFaceletScannerPlugin</class>
     </scanner>
-</jqa-plugin:jqassistant-plugin>
+</jpd:jqassistant-plugin>
