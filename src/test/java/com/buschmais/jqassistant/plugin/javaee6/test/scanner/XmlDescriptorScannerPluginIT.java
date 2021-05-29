@@ -15,7 +15,7 @@ import com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * Contains integration tests for JavaEE XML descriptors.

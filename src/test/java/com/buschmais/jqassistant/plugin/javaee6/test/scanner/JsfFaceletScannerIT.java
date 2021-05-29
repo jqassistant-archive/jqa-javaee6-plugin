@@ -15,10 +15,10 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.nullValue;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.junit.Assert.assertThat;
 
 /**
  * Scans some jspx-files and checks nodes & relationships.
@@ -85,7 +85,7 @@ public class JsfFaceletScannerIT extends AbstractJavaPluginIT {
 
     /**
      * Scan the directory containing the test facelets.
-     * 
+     *
      * @throws IOException
      *             If scanning fails.
      */
