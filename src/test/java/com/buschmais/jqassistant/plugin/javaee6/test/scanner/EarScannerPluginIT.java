@@ -22,6 +22,7 @@ import static org.hamcrest.core.IsCollectionContaining.hasItems;
 public class EarScannerPluginIT extends AbstractPluginIT {
 
     @Test
+    @TestStore(type = TestStore.Type.FILE)
     public void warArchive() {
         File warFile = new File("target/test-data/javaee-inject-example-war.war");
         store.beginTransaction();
@@ -31,6 +32,7 @@ public class EarScannerPluginIT extends AbstractPluginIT {
     }
 
     @Test
+    @TestStore(type = TestStore.Type.FILE)
     public void earArchive() {
         File earFile = new File("target/test-data/javaee-inject-example-ear.ear");
         store.beginTransaction();

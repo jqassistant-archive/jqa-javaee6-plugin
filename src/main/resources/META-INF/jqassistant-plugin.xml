@@ -5,7 +5,6 @@
     <description>Aggregates plugins providing scanners and rules for Java EE 6 technologies (e.g. JPA2, EJB3).</description>
     <model>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.EnterpriseApplicationArchiveDescriptor</class>
-        <class>com.buschmais.jqassistant.plugin.javaee6.api.model.WebApplicationDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.WebApplicationArchiveDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.WebApplicationDirectoryDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.WebXmlDescriptor</class>
@@ -36,16 +35,11 @@
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.LoginConfigDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.FormLoginConfigDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.ApplicationXmlDescriptor</class>
-        <class>com.buschmais.jqassistant.plugin.javaee6.api.model.EnterpriseApplicationModuleDescriptor</class>
-        <class>com.buschmais.jqassistant.plugin.javaee6.api.model.WebDescriptor</class>
-        <class>com.buschmais.jqassistant.plugin.javaee6.api.model.ConnectorDescriptor</class>
-        <class>com.buschmais.jqassistant.plugin.javaee6.api.model.EjbDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.EjbModuleDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.ConnectorModuleDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.ClientModuleDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.WebModuleDescriptor</class>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.model.JsfFaceletDescriptor</class>
-        <class>com.buschmais.jqassistant.plugin.javaee6.api.model.JsfDescriptor</class>
     </model>
     <scope>
         <class>com.buschmais.jqassistant.plugin.javaee6.api.scanner.WebApplicationScope</class>
