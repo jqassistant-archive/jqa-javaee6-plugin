@@ -1,7 +1,0 @@
-//
-//
-//
-ifndef::jqa-in-manual[== Version 1.3]
-ifdef::jqa-in-manual[== Java EE 6 Plugin 1.3]
-
-- Only internal changes.
