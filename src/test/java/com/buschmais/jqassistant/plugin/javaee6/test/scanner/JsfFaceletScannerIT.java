@@ -25,7 +25,7 @@ import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
  *
  * @author peter.herklotz@buschmais.com
  */
-public class JsfFaceletScannerIT extends AbstractJavaPluginIT {
+class JsfFaceletScannerIT extends AbstractJavaPluginIT {
 
     /**
      * Scans some jspx-files and checks nodes.
@@ -34,7 +34,7 @@ public class JsfFaceletScannerIT extends AbstractJavaPluginIT {
      *             error during scan
      */
     @Test
-    public void testNodes() throws IOException {
+    void testNodes() throws IOException {
         store.beginTransaction();
         scanFaceletDirectory();
 
@@ -61,7 +61,7 @@ public class JsfFaceletScannerIT extends AbstractJavaPluginIT {
      *             error during scan
      */
     @Test
-    public void testRelationships() throws IOException {
+    void testRelationships() throws IOException {
         store.beginTransaction();
         scanFaceletDirectory();
 

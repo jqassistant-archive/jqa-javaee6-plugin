@@ -57,7 +57,7 @@ import static org.mockito.Mockito.when;
 
 @MockitoSettings(strictness = Strictness.LENIENT)
 @ExtendWith(MockitoExtension.class)
-public class WebXmlScannerPluginTest extends AbstractXmlScannerTest {
+class WebXmlScannerPluginTest extends AbstractXmlScannerTest {
 
     @Mock
     private TypeResolver typeResolver;
@@ -208,7 +208,7 @@ public class WebXmlScannerPluginTest extends AbstractXmlScannerTest {
     private FormLoginConfigDescriptor formLoginConfigDescriptor;
 
     @Test
-    public void webXml() throws IOException {
+    void webXml() throws IOException {
         when(scannerContext.peek(TypeResolver.class)).thenReturn(typeResolver);
 
         FileResource fileResource = mock(FileResource.class);

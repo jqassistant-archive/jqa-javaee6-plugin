@@ -20,13 +20,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 /**
  * Contains integration tests for JavaEE XML descriptors.
  */
-public class XmlDescriptorScannerPluginIT extends AbstractPluginIT {
+class XmlDescriptorScannerPluginIT extends AbstractPluginIT {
 
     /**
      * Verify scanning of web.xml descriptors.
      */
     @Test
-    public void webXml() {
+    void webXml() {
         store.beginTransaction();
         Scanner scanner = getScanner();
         WebApplicationArchiveDescriptor warDescriptor = store.create(WebApplicationArchiveDescriptor.class);
@@ -42,7 +42,7 @@ public class XmlDescriptorScannerPluginIT extends AbstractPluginIT {
      * Verify scanning of application.xml descriptors.
      */
     @Test
-    public void applicationXml() {
+    void applicationXml() {
         File webXml = new File(getClassesDirectory(XmlDescriptorScannerPluginIT.class), "META-INF/application.xml");
         store.beginTransaction();
         Scanner scanner = getScanner();

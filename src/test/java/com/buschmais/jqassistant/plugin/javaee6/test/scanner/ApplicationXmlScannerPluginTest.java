@@ -38,7 +38,7 @@ import static org.mockito.Mockito.when;
 
 @MockitoSettings(strictness = Strictness.LENIENT)
 @ExtendWith(MockitoExtension.class)
-public class ApplicationXmlScannerPluginTest extends AbstractXmlScannerTest {
+class ApplicationXmlScannerPluginTest extends AbstractXmlScannerTest {
 
     @Mock
     private FileDescriptor fileDescriptor;
@@ -77,7 +77,7 @@ public class ApplicationXmlScannerPluginTest extends AbstractXmlScannerTest {
     private DescriptionDescriptor securityRoleDescriptionDescriptor;
 
     @Test
-    public void applicationXml() throws IOException {
+    void applicationXml() throws IOException {
         FileResource fileResource = mock(FileResource.class);
         when(fileResource.createStream()).thenAnswer(new Answer<InputStream>() {
             @Override

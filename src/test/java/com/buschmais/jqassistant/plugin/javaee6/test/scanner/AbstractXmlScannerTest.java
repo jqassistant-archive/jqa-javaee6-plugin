@@ -17,7 +17,7 @@ import org.mockito.Mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public abstract class AbstractXmlScannerTest {
+abstract class AbstractXmlScannerTest {
 
     @Mock
     protected Scanner scanner;
@@ -29,7 +29,7 @@ public abstract class AbstractXmlScannerTest {
     protected Store store;
 
     @BeforeEach
-    public void before() {
+    void before() {
         when(scanner.getContext()).thenReturn(scannerContext);
         when(scannerContext.getStore()).thenReturn(store);
     }

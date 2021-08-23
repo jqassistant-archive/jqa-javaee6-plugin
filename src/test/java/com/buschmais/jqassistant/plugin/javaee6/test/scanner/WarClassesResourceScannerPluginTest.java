@@ -28,7 +28,7 @@ import static org.mockito.Mockito.when;
 
 @MockitoSettings(strictness = Strictness.LENIENT)
 @ExtendWith(MockitoExtension.class)
-public class WarClassesResourceScannerPluginTest {
+class WarClassesResourceScannerPluginTest {
 
     @Mock
     private FileResource resource;
@@ -49,12 +49,12 @@ public class WarClassesResourceScannerPluginTest {
     private ContainerFileResolver containerFileResolver;
 
     @BeforeEach
-    public void stub() {
+    void stub() {
         when(scanner.getContext()).thenReturn(scannerContext);
     }
 
     @Test
-    public void accepts() throws IOException {
+    void accepts() throws IOException {
         WarClassesFileScannerPlugin plugin = new WarClassesFileScannerPlugin();
         assertThat(plugin.accepts(resource, "/Test.class", WebApplicationScope.WAR), equalTo(false));
         assertThat(plugin.accepts(resource, "/WEB-INF/classes/Test.class", WebApplicationScope.WAR), equalTo(true));
@@ -62,7 +62,7 @@ public class WarClassesResourceScannerPluginTest {
     }
 
     @Test
-    public void scan() throws IOException {
+    void scan() throws IOException {
         when(scannerContext.getCurrentDescriptor()).thenReturn(fileDescriptor);
         when(scanner.scan(resource, fileDescriptor, "/Test.class", JavaScope.CLASSPATH)).thenReturn(containedFileDescriptor);
 
