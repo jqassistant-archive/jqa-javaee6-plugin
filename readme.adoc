@@ -1,6 +1,6 @@
 = jQAssistant JavaEE 6 Plugin
 
-This is the Java EE 6 Plugin of https://www.jqassistant.org[jQAssistant^].
+This is the Java EE 6 Plugin of https://jqassistant.org[jQAssistant^].
 It enables jQAssistant to scan and to analyze Java EE 6 related
 artifacts like:
 
@@ -9,4 +9,4 @@ artifacts like:
 - ...
 
 
-For more information on jQAssistant see https://www.jqassistant.org[^].
+For more information on jQAssistant see https://jqassistant.org[^].
