@@ -46,7 +46,6 @@
         <jqa-jpa2-plugin.version>1.12.0-SNAPSHOT</jqa-jpa2-plugin.version>
         <jqa-plugin-common.version>1.12.0-SNAPSHOT</jqa-plugin-common.version>
         <jqa-xml-plugin.version>1.12.0-SNAPSHOT</jqa-xml-plugin.version>
-        <asciidoctor.toplevelid>javaee-plugin</asciidoctor.toplevelid>
 
         <!-- See https://github.com/jQAssistant/jqa-javaee6-plugin/issues/6 -->
         <maven.jaxb2-plugin.version>0.9.1</maven.jaxb2-plugin.version>
