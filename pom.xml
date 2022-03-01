@@ -51,9 +51,6 @@
         <maven.jaxb2-plugin.version>0.9.1</maven.jaxb2-plugin.version>
     </properties>
 
-    <dependencyManagement>
-    </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -86,7 +83,7 @@
     <dependencies>
         <dependency>
             <groupId>com.buschmais.jqassistant.core</groupId>
-            <artifactId>shared</artifactId>
+            <artifactId>test</artifactId>
         </dependency>
         <dependency>
             <groupId>com.buschmais.jqassistant.plugin</groupId>
@@ -107,14 +104,6 @@
             <groupId>com.buschmais.jqassistant.plugin</groupId>
             <artifactId>jaxrs</artifactId>
             <version>${jqa-jaxrs-plugin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.buschmais.jqassistant.core</groupId>
-            <artifactId>scanner</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.buschmais.jqassistant.core</groupId>
-            <artifactId>plugin</artifactId>
         </dependency>
         <dependency>
             <groupId>com.buschmais.jqassistant.plugin</groupId>
