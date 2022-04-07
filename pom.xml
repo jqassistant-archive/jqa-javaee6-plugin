@@ -151,6 +151,12 @@
             <artifactId>slf4j-simple</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.wicketstuff</groupId>
             <artifactId>javaee-inject-example-ear</artifactId>
             <version>6.18.0</version>
