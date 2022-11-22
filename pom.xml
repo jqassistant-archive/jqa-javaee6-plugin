@@ -46,19 +46,22 @@
         <jqa-jpa2-plugin.version>1.13.0-SNAPSHOT</jqa-jpa2-plugin.version>
         <jqa-plugin-common.version>1.13.0-SNAPSHOT</jqa-plugin-common.version>
         <jqa-xml-plugin.version>1.13.0-SNAPSHOT</jqa-xml-plugin.version>
-
-        <!-- See https://github.com/jQAssistant/jqa-javaee6-plugin/issues/6 -->
-        <maven.jaxb2-plugin.version>0.9.1</maven.jaxb2-plugin.version>
+        <activation-api.version>1.2.0</activation-api.version>
     </properties>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <sourcepath>${project.build.directory}/generated-sources/delombok;${project.build.directory}/generated-sources/xjc</sourcepath>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
-                <configuration>
-                    <catalog>src/main/resources/META-INF/xsd/catalog.cat</catalog>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -81,6 +84,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>javax.activation-api</artifactId>
+            <version>${activation-api.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.buschmais.jqassistant.core</groupId>
             <artifactId>test</artifactId>
